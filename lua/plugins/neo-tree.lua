@@ -14,7 +14,7 @@ return {
             source_selector = {
                 winbar = false,
                 statusline = false,
-                sidebar = true -- 启用 sidebar 功能选项
+                sidebar = true,
             }
         })
     end,
