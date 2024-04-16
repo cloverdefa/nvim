@@ -15,6 +15,7 @@ return {
 				hide_by_name = {
 					".github",
 					".gitignore",
+          ".gitignore_global",
 					"package-lock.json",
 				},
 				never_show = { ".git" },
