@@ -2,6 +2,7 @@
     "diagnostics.globals": [
         "vim",
         "let",
-        "python3_host_prog"
+        "python3_host_prog",
+        "loaded_python3_provider"
     ]
 }
