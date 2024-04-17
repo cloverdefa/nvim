@@ -1,5 +1,7 @@
 {
     "diagnostics.globals": [
-        "vim"
+        "vim",
+        "let",
+        "python3_host_prog"
     ]
 }
