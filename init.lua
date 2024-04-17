@@ -13,4 +13,3 @@ vim.opt.rtp:prepend(lazypath)
 
 require("vim-options")
 require("lazy").setup("plugins")
-python3_host_prog = '/usr/local/bin/python'
