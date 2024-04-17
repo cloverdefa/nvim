@@ -13,3 +13,8 @@ vim.opt.rtp:prepend(lazypath)
 
 require("vim-options")
 require("lazy").setup("plugins")
+
+local g = vim.g
+g.mapleader = [[ ]]
+g.python_host_prog = "/usr/bin/python3"
+g.python3_host_prog = "$HOMEBREW_PREFIX/bin/python3"

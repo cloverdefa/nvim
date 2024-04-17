@@ -3,6 +3,7 @@
         "vim",
         "let",
         "python3_host_prog",
-        "loaded_python3_provider"
+        "loaded_python3_provider",
+        "g"
     ]
 }
