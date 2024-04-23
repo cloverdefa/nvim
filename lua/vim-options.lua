@@ -4,6 +4,8 @@ vim.cmd("set softtabstop=2")
 vim.cmd("set shiftwidth=2")
 vim.g.mapleader = " "
 vim.g.python3_host_prog = "~/.pyenv/shims/python3"
+vim.g.loaded_ruby_provider = 0
+vim.g.loaded_perl_provider = 0
 
 vim.g.background = "light"
 
