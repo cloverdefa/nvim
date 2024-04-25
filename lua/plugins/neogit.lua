@@ -9,7 +9,5 @@ return {
     require("neogit").setup()
     vim.keymap.set("n", "<leader>o", ":Neogit<CR>", {})
     vim.keymap.set("n", "<leader>l", ":Neogit commit<CR>", {})
-
   end,
 }
-
