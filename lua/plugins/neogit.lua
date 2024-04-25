@@ -7,7 +7,7 @@ return {
   },
   config = function()
     require("neogit").setup()
-    vim.keymap.set("n", "<leader>o", ":Neogit cwd=%:p:h<CR>", {})
+    vim.keymap.set("n", "<leader>o", ":Neogit<CR>", {})
     vim.keymap.set("n", "<leader>l", ":Neogit commit<CR>", {})
 
   end,
