@@ -4,6 +4,9 @@
         "let",
         "python3_host_prog",
         "loaded_python3_provider",
-        "g"
+        "g",
+        "neogit",
+        "local",
+        "group"
     ]
 }
