@@ -7,6 +7,9 @@ return {
     -- Only one of these is needed, not both.
     "nvim-telescope/telescope.nvim", -- optional
     -- "ibhagwan/fzf-lua",              -- optional
+    vim.keymap.set("n", "<leader>gv", ":Neogit commit<CR>", {}),
+    vim.keymap.set("n", "<leader>gc", ":Neogit cwd=%:p:h<CR>", {}),
+
   },
   config = true
 }
