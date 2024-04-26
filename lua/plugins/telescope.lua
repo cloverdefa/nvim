@@ -14,7 +14,7 @@ return {
             require("telescope.themes").get_dropdown({}),
           },
           ["pull_request"] = {
-            require('telescope').extensions.gh.pull_request({}),
+            require('telescope').extensions.gh.pull_request<CR>({}),
           },
         },
       })
