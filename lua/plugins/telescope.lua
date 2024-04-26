@@ -4,6 +4,7 @@ return {
   },
   {
     "nvim-telescope/telescope.nvim",
+    "nvim-telescopt/telescope-github.nvim",
     tag = "0.1.6",
     dependencies = { "nvim-lua/plenary.nvim" },
     config = function()
@@ -11,6 +12,9 @@ return {
         extensions = {
           ["ui-select"] = {
             require("telescope.themes").get_dropdown({}),
+          },
+          ["pull_request"] = {
+            require('telescope').extensions.gh.pull_request({}),
           },
         },
       })
