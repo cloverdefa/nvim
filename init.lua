@@ -1,1 +1,2 @@
-require("dast.core.options")
+require("dast.core")
+require("dast.lazy")
