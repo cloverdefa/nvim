@@ -46,6 +46,8 @@ return {
 				"stylua", -- lua formatter
 				"isort", -- python formatter
 				"black", -- python formatter
+				"shellcheck", --#endregion
+				"ruff", --#endregion
 			},
 		})
 	end,
