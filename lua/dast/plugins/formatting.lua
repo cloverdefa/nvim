@@ -9,7 +9,7 @@ return {
         json = { "prettier" },
         bash = { "shfmt" },
         yaml = { "prettier" },
-        lua = { "beautysh" },
+        lua = { "stylua" },
         python = { "isort", "black" },
       },
       format_on_save = {
