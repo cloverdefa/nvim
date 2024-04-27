@@ -14,6 +14,7 @@ return {
         css = { "prettier" },
         html = { "prettier" },
         json = { "prettier" },
+        bash = { "shfmt" },
         yaml = { "prettier" },
         markdown = { "prettier" },
         graphql = { "prettier" },
