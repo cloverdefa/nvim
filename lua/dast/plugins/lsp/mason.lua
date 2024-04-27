@@ -37,7 +37,6 @@ return {
       ensure_installed = {
         "prettier", -- Prettier is an opinionated code formatter.
         "black", -- Black, the uncompromising Python code formatter.
-        "pylint", -- Pylint is a static code analyser for Python 2 or 3.
         "stylua", -- An opinionated Lua code formatter.
         "isort", -- isort is a Python utility / library to sort imports alphabetically.
         "shfmt", -- A shell formatter (sh/bash/mksh).
