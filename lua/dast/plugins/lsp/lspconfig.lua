@@ -85,26 +85,40 @@ return {
           capabilities = capabilities,
         })
       end,
-      ["svelte"] = function()
-        -- configure svelte server
-        lspconfig["svelte"].setup({
-          capabilities = capabilities,
-          on_attach = function(client, bufnr)
-            vim.api.nvim_create_autocmd("BufWritePost", {
-              pattern = { "*.js", "*.ts" },
-              callback = function(ctx)
-                -- Here use ctx.match instead of ctx.file
-                client.notify("$/onDidChangeTsOrJsFile", { uri = ctx.match })
-              end,
-            })
-          end,
-        })
-      end,
-      ["graphql"] = function()
+      -- ["svelte"] = function()
+      --   -- configure svelte server
+      --   lspconfig["svelte"].setup({
+      --     capabilities = capabilities,
+      --     on_attach = function(client, bufnr)
+      --       vim.api.nvim_create_autocmd("BufWritePost", {
+      --         pattern = { "*.js", "*.ts" },
+      --         callback = function(ctx)
+      --           -- Here use ctx.match instead of ctx.file
+      --           client.notify("$/onDidChangeTsOrJsFile", { uri = ctx.match })
+      --         end,
+      --       })
+      --     end,
+      --   })
+      -- end,
+      -- ["graphql"] = function()
+      --   -- configure graphql language server
+      --   lspconfig["graphql"].setup({
+      --     capabilities = capabilities,
+      --     filetypes = { "graphql", "gql", "svelte", "typescriptreact", "javascriptreact" },
+      --   })
+      -- end,
+      -- ["emmet_ls"] = function()
+      --   -- configure emmet language server
+      --   lspconfig["emmet_ls"].setup({
+      --     capabilities = capabilities,
+      --     filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less", "svelte" },
+      --   })
+      -- end,
+      ["shfmt"] = function()
         -- configure graphql language server
-        lspconfig["graphql"].setup({
+        lspconfig["shfmt"].setup({
           capabilities = capabilities,
-          filetypes = { "graphql", "gql", "svelte", "typescriptreact", "javascriptreact" },
+          filetypes = { "sh" },
         })
       end,
       ["emmet_ls"] = function()
@@ -119,13 +133,13 @@ return {
         lspconfig["lua_ls"].setup({
           capabilities = capabilities,
           settings = {
-            Lua = {
+            lua = {
               -- make the language server recognize "vim" global
               diagnostics = {
                 globals = { "vim" },
               },
               completion = {
-                callSnippet = "Replace",
+                callsnippet = "replace",
               },
             },
           },
