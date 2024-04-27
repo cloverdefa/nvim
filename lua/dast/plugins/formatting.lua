@@ -7,7 +7,7 @@ return {
     conform.setup({
       formatters_by_ft = {
         json = { "prettier" },
-        bash = { "shfmt", "beautysh" },
+        bash = { "shfmt" },
         yaml = { "prettier" },
         lua = { "stylua" },
         python = { "isort", "black" },

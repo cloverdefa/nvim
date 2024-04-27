@@ -28,6 +28,7 @@ return {
       -- list of servers for mason to install
       ensure_installed = {
         "lua_ls",
+        "bash_ls",
         "pyright",
       },
     })
@@ -40,7 +41,6 @@ return {
         "stylua", -- An opinionated Lua code formatter.
         "isort", -- isort is a Python utility / library to sort imports alphabetically.
         "shfmt", -- A shell formatter (sh/bash/mksh).
-        "beautysh", -- beautysh - A Bash beautifier for the masses.
       },
     })
   end,
