@@ -85,13 +85,6 @@ return {
           capabilities = capabilities,
         })
       end,
-      ["shfmt"] = function()
-        -- configure bash language server
-        lspconfig["shfmt"].setup({
-          capabilities = capabilities,
-          filetypes = { "sh", "bash", "mksh" },
-        })
-      end,
       ["lua_ls"] = function()
         -- configure lua server (with special settings)
         lspconfig["lua_ls"].setup({
