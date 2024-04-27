@@ -115,7 +115,7 @@ return {
       --   })
       -- end,
       ["shfmt"] = function()
-        -- configure emmet language server
+        -- configure bash language server
         lspconfig["shfmt"].setup({
           capabilities = capabilities,
           filetypes = { "sh", "bash", "mksh" },
