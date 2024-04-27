@@ -43,11 +43,12 @@ return {
     mason_tool_installer.setup({
       ensure_installed = {
         "prettier", -- prettier formatter
+        "pyright", -- Static type checker for Python.
         "stylua", -- lua formatter
-        "isort", -- python formatter
-        "black", -- python formatter
-        "shellcheck", --#endregion
-        "ruff", --#endregion
+        "isort", -- isort is a Python utility / library to sort imports alphabetically.
+        "black", -- Black, the uncompromising Python code formatter.
+        "shellcheck", -- ShellCheck, a static analysis tool for shell scripts.
+        "ruff", -- An extremely fast Python linter and code formatter, written in Rust.
       },
     })
   end,
