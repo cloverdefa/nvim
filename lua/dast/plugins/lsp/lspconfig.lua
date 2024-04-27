@@ -107,11 +107,19 @@ return {
       --     filetypes = { "graphql", "gql", "svelte", "typescriptreact", "javascriptreact" },
       --   })
       -- end,
-      ["shellcheck"] = function()
-        -- configure graphql language server
-        lspconfig["shellcheck"].setup({
+      ["shfmt"] = function()
+        -- configure svelte server
+        lspconfig["shfmt"].setup({
           capabilities = capabilities,
-          filetypes = { "sh" },
+          on_attach = function(client, bufnr)
+            vim.api.nvim_create_autocmd("BufWritePost", {
+              pattern = { "*.sh" },
+              callback = function(ctx)
+                -- Here use ctx.match instead of ctx.file
+                client.notify("$/onDidChangeTsOrJsFile", { uri = ctx.match })
+              end,
+            })
+          end,
         })
       end,
       ["emmet_ls"] = function()
