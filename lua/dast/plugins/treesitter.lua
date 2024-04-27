@@ -23,15 +23,7 @@ return {
       },
       -- ensure these language parsers are installed
       ensure_installed = {
-        "json",
-        "javascript",
-        "typescript",
-        "yaml",
-        "markdown",
-        "markdown_inline",
         "python",
-        "svelte",
-        "graphql",
         "bash",
         "lua",
         "vim",
