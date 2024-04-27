@@ -107,18 +107,19 @@ return {
       --     filetypes = { "graphql", "gql", "svelte", "typescriptreact", "javascriptreact" },
       --   })
       -- end,
-      -- ["emmet_ls"] = function()
-      --   -- configure emmet language server
-      --   lspconfig["emmet_ls"].setup({
-      --     capabilities = capabilities,
-      --     filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less", "svelte" },
-      --   })
-      -- end,
       ["shfmt"] = function()
-        -- configure graphql language server
+        -- configure svelte server
         lspconfig["shfmt"].setup({
           capabilities = capabilities,
-          filetypes = { "sh" },
+          on_attach = function(client, bufnr)
+            vim.api.nvim_create_autocmd("BufWritePost", {
+              pattern = { "*.sh" },
+              callback = function(ctx)
+                -- Here use ctx.match instead of ctx.file
+                client.notify("$/onDidChangeTsOrJsFile", { uri = ctx.match })
+              end,
+            })
+          end,
         })
       end,
       ["emmet_ls"] = function()
