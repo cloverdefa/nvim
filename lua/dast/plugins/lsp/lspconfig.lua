@@ -85,6 +85,23 @@ return {
           capabilities = capabilities,
         })
       end,
+      ["bashls"] = function()
+        -- configure lua server (with special settings)
+        lspconfig["bashls"].setup({
+          capabilities = capabilities,
+          settings = {
+            lua = {
+              -- make the language server recognize "vim" global
+              diagnostics = {
+                globals = { "vim" },
+              },
+              completion = {
+                callsnippet = "replace",
+              },
+            },
+          },
+        })
+      end,
       ["lua_ls"] = function()
         -- configure lua server (with special settings)
         lspconfig["lua_ls"].setup({
