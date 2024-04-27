@@ -107,16 +107,9 @@ return {
       --     filetypes = { "graphql", "gql", "svelte", "typescriptreact", "javascriptreact" },
       --   })
       -- end,
-      -- ["emmet_ls"] = function()
-      --   -- configure emmet language server
-      --   lspconfig["emmet_ls"].setup({
-      --     capabilities = capabilities,
-      --     filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less", "svelte" },
-      --   })
-      -- end,
-      ["shfmt"] = function()
+      ["shellcheck"] = function()
         -- configure graphql language server
-        lspconfig["shfmt"].setup({
+        lspconfig["shellcheck"].setup({
           capabilities = capabilities,
           filetypes = { "sh" },
         })
