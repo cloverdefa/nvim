@@ -27,15 +27,7 @@ return {
     mason_lspconfig.setup({
       -- list of servers for mason to install
       ensure_installed = {
-        -- "tsserver",
-        -- "html",
-        -- "cssls",
-        -- "tailwindcss",
-        -- "svelte",
         "lua_ls",
-        -- "graphql",
-        -- "emmet_ls",
-        -- "prismals",
         "pyright",
       },
     })
@@ -48,6 +40,7 @@ return {
         "stylua", -- An opinionated Lua code formatter.
         "isort", -- isort is a Python utility / library to sort imports alphabetically.
         "shfmt", -- A shell formatter (sh/bash/mksh).
+        "beautysh", -- beautysh - A Bash beautifier for the masses.
       },
     })
   end,
