@@ -42,7 +42,9 @@ return {
 
     mason_tool_installer.setup({
       ensure_installed = {
+        "prettier",
         "black",
+        "pylint",
         "stylua", -- lua formatter
         "isort", -- isort is a Python utility / library to sort imports alphabetically.
         "shellcheck", -- ShellCheck, a static analysis tool for shell scripts.
