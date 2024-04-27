@@ -1,3 +1,4 @@
+---@diagnostic disable: inject-field
 return {
   {
     "folke/tokyonight.nvim",
@@ -16,6 +17,7 @@ return {
       require("tokyonight").setup({
         style = "night",
         on_colors = function(colors)
+          ---@diagnostic disable-next-line: inject-field
           colors.bg = bg
           colors.bg_dark = bg_dark
           colors.bg_float = bg_dark
