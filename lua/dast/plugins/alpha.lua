@@ -19,12 +19,12 @@ return {
 
     -- Set menu
     dashboard.section.buttons.val = {
-      dashboard.button("e", "  > New File", "<cmd>ene<CR>"),
-      dashboard.button("SPC ee", "  > Toggle file explorer", "<cmd>NvimTreeToggle<CR>"),
-      dashboard.button("SPC ff", "󰱼 > Find File", "<cmd>Telescope find_files<CR>"),
-      dashboard.button("SPC fs", "  > Find Word", "<cmd>Telescope live_grep<CR>"),
-      dashboard.button("SPC wr", "󰁯  > Restore Session For Current Directory", "<cmd>SessionRestore<CR>"),
-      dashboard.button("q", " > Quit NVIM", "<cmd>qa<CR>"),
+      dashboard.button("e", "  > 開啟新檔案", "<cmd>ene<CR>"),
+      dashboard.button("SPC ee", "  > 開啟檔案瀏覽器", "<cmd>NvimTreeToggle<CR>"),
+      dashboard.button("SPC ff", "󰱼 > 尋找檔案", "<cmd>Telescope find_files<CR>"),
+      dashboard.button("SPC fs", "  > 尋找關鍵字", "<cmd>Telescope live_grep<CR>"),
+      dashboard.button("SPC wr", "󰁯  > 回復至儲存工作區", "<cmd>SessionRestore<CR>"),
+      dashboard.button("q", " > 離開 NVIM", "<cmd>qa<CR>"),
     }
 
     -- Send config to alpha
@@ -34,5 +34,3 @@ return {
     vim.cmd([[autocmd FileType alpha setlocal nofoldenable]])
   end,
 }
-
-
