@@ -17,6 +17,7 @@ return {
         graphql = { "prettier" },
         json = { "prettier" },
         bash = { "shellcheck" },
+        sh = { "shellcheck" },
         yaml = { "prettier" },
         lua = { "stylua" },
         python = { "isort", "black" },
