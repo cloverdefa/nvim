@@ -85,6 +85,23 @@ return {
           capabilities = capabilities,
         })
       end,
+      ["pyright"] = function()
+        -- configure lua server (with special settings)
+        lspconfig["pyright"].setup({
+          capabilities = capabilities,
+          settings = {
+            lua = {
+              -- make the language server recognize "vim" global
+              diagnostics = {
+                globals = { "vim" },
+              },
+              completion = {
+                callsnippet = "replace",
+              },
+            },
+          },
+        })
+      end,
       ["bashls"] = function()
         -- configure lua server (with special settings)
         lspconfig["bashls"].setup({
