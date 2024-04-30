@@ -86,18 +86,10 @@ return {
         })
       end,
       ["pyright"] = function()
-        -- configure svelte server
+        -- configure emmet language server
         lspconfig["pyright"].setup({
           capabilities = capabilities,
-          on_attach = function(client, bufnr)
-            vim.api.nvim_create_autocmd("BufWritePost", {
-              pattern = { "*.py" },
-              callback = function(ctx)
-                -- Here use ctx.match instead of ctx.file
-                client.notify("$/onDidChangeTsOrJsFile", { uri = ctx.match })
-              end,
-            })
-          end,
+          filetypes = { "python" },
         })
       end,
       ["bashls"] = function()
