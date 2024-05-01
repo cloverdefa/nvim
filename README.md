@@ -9,3 +9,7 @@
 ## git clone https://github.com/cloverdefa/nvim.git ~/.config/nvim
 
 ## 設定.zshrc
+
+## node install -g neovim tree-sitter-cli
+
+## pip install pynvim
