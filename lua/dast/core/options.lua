@@ -1,46 +1,46 @@
 vim.cmd("let g:netrw_liststyle = 3")
 
-local opt = vim.opt -- for conciseness
+local opt = vim.opt -- 為了簡潔
 
--- line numbers
-opt.relativenumber = true -- show relative line numbers
-opt.number = true -- shows absolute line number on cursor line (when relative number is on)
+-- 行號
+opt.relativenumber = true -- 顯示相對行號
+opt.number = true -- 在光標行顯示絕對行號（啟用相對行號時）
 
--- tabs & indentation
-opt.tabstop = 2 -- 2 spaces for tabs (prettier default)
-opt.shiftwidth = 2 -- 2 spaces for indent width
-opt.expandtab = true -- expand tab to spaces
-opt.autoindent = true -- copy indent from current line when starting new one
+-- 標籤 & 縮進
+opt.tabstop = 2 -- 標籤為2個空格（prettier預設值）
+opt.shiftwidth = 2 -- 縮進寬度為2個空格
+opt.expandtab = true -- 將標籤轉換成空格
+opt.autoindent = true -- 新行開始時複製當前行的縮進
 
--- line wrapping
-opt.wrap = false -- disable line wrapping
+-- 換行
+opt.wrap = false -- 禁用自動換行
 
--- search settings
-opt.ignorecase = true -- ignore case when searching
-opt.smartcase = true -- if you include mixed case in your search, assumes you want case-sensitive
+-- 搜索設置
+opt.ignorecase = true -- 搜索時忽略大小寫
+opt.smartcase = true -- 如果搜索包含大小寫混合，則假設你需要區分大小寫
 
--- cursor line
-opt.cursorline = true -- highlight the current cursor line
+-- 光標行
+opt.cursorline = true -- 高亮當前光標所在行
 
--- appearance
+-- 外觀
 
--- turn on termguicolors for nightfly colorscheme to work
--- (have to use iterm2 or any other true color terminal)
+-- 啟用 termguicolors 以使 nightfly 色彩主題生效
+-- （必須使用 iterm2 或其他支持真彩色的終端機）
 opt.termguicolors = true
-opt.background = "dark" -- colorschemes that can be light or dark will be made dark
-opt.signcolumn = "yes" -- show sign column so that text doesn't shift
+opt.background = "dark" -- 可以是亮色或暗色的色彩主題將被設為暗色
+opt.signcolumn = "yes" -- 顯示標誌欄，以防文本位移
 
--- backspace
-opt.backspace = "indent,eol,start" -- allow backspace on indent, end of line or insert mode start position
+-- 回退鍵
+opt.backspace = "indent,eol,start" -- 允許在縮進、行尾或插入模式起始位置使用回退鍵
 
--- clipboard
-opt.clipboard:append("unnamedplus") -- use system clipboard as default register
+-- 剪貼板
+opt.clipboard:append("unnamedplus") -- 使用系統剪貼板作為預設寄存器
 
--- split windows
-opt.splitright = true -- split vertical window to the right
-opt.splitbelow = true -- split horizontal window to the bottom
+-- 分割窗口
+opt.splitright = true -- 垂直分割窗口向右分割
+opt.splitbelow = true -- 水平分割窗口向下分割
 
--- turn off swapfile
+-- 關閉交換檔案
 opt.swapfile = false
 
 vim.g.python3_host_prog = "~/.pyenv/shims/python3"

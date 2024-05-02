@@ -23,7 +23,7 @@ keymap.set("n", "<leader>-", "<C-x>", { desc = "Decrement number" }) -- decremen
 keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" }) -- 右方開啟分割視窗
 keymap.set("n", "<leader>sh", "<C-w>s", { desc = "Split window horizontally" }) -- 下方開啟分割視窗
 keymap.set("n", "<leader>se", "<C-w>=", { desc = "Make splits equal size" }) -- 還原分割視窗布局回到初始尺寸
-keymap.set("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current split" }) -- 關閉分割是裝
+keymap.set("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current split" }) -- 關閉分割視窗
 
 keymap.set("n", "<leader>to", "<cmd>tabnew<CR>", { desc = "Open new tab" }) -- 開啟新分頁
 keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close current tab" }) -- 關閉目前分頁
