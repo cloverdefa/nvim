@@ -37,5 +37,4 @@ keymap.set("n", "<F10>", function()
   vim.fn.feedkeys("a")
   local enter = vim.api.nvim_replace_termcodes("<CR>", true, true, true)
   vim.fn.feedkeys("clear" .. enter)
-  vim.fn.feedkeys("echo hello world" .. enter)
 end) -- 分割畫面啟動終端機
