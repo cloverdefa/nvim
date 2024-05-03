@@ -1,7 +1,11 @@
 return {
   "rcarriga/nvim-notify",
-  event = "VeryLazy",
   config = function()
-    vim.notify = require("notify")
+    local notify = require("notify")
+    notify.setup({
+      max_slots = 5,
+      max_width = 80,
+    })
+    vim.notify = notify
   end,
 }
