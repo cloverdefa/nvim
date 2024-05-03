@@ -15,6 +15,8 @@ return {
         lua = { "string" }, -- don't add pairs in lua string treesitter nodes
         javascript = { "template_string" }, -- don't add pairs in javscript template_string treesitter nodes
         java = false, -- don't check treesitter on java
+        sh = false, -- enable autopairs in all shell script treesitter nodes
+        python = false, -- enable autopairs in all python treesitter nodes
       },
     })
 
