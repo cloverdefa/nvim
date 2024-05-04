@@ -66,7 +66,6 @@ return {
         keymap.set("n", "<leader>rs", ":LspRestart<CR>", opts) -- mapping to restart lsp if necessary
       end,
     })
-
     -- used to enable autocompletion (assign to every lsp server config)
     local capabilities = cmp_nvim_lsp.default_capabilities()
 
@@ -85,24 +84,6 @@ return {
           capabilities = capabilities,
         })
       end,
-      ["pyright"] = function()
-        -- configure lua server (with special settings)
-        lspconfig["pyright"].setup({
-          capabilities = capabilities,
-          settings = {
-            lua = {
-              -- make the language server recognize "vim" global
-              diagnostics = {
-                globals = { "vim" },
-              },
-              completion = {
-                callsnippet = "replace",
-              },
-            },
-          },
-        })
-      end,
-
       ["bashls"] = function()
         -- configure lua server (with special settings)
         lspconfig["bashls"].setup({
@@ -123,6 +104,23 @@ return {
       ["lua_ls"] = function()
         -- configure lua server (with special settings)
         lspconfig["lua_ls"].setup({
+          capabilities = capabilities,
+          settings = {
+            lua = {
+              -- make the language server recognize "vim" global
+              diagnostics = {
+                globals = { "vim" },
+              },
+              completion = {
+                callsnippet = "replace",
+              },
+            },
+          },
+        })
+      end,
+      ["pyright"] = function()
+        -- configure lua server (with special settings)
+        lspconfig["pyright"].setup({
           capabilities = capabilities,
           settings = {
             lua = {
