@@ -85,13 +85,6 @@ return {
           capabilities = capabilities,
         })
       end,
-      ["pyright"] = function()
-        -- configure emmet language server
-        lspconfig["pyright"].setup({
-          capabilities = capabilities,
-          filetypes = { "python" },
-        })
-      end,
       ["bashls"] = function()
         -- configure lua server (with special settings)
         lspconfig["bashls"].setup({
