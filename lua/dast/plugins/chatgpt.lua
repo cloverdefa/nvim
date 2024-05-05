@@ -8,7 +8,7 @@ return {
   },
   config = function()
     require("chatgpt").setup({
-      async_api_key_cmd = "pass show neovim-openai",
+      async_api_key_cmd = "pass show /api/tokens/openai/neovim",
     })
   end,
 }
