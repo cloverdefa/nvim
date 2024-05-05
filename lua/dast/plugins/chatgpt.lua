@@ -1,5 +1,5 @@
 return {
-  "jackMort/ChatGPT.nvim",
+  "dreamsofcode-io/ChatGPT.nvim",
   event = "VeryLazy",
   dependencies = {
     "MunifTanjim/nui.nvim",
@@ -8,7 +8,7 @@ return {
   },
   config = function()
     require("chatgpt").setup({
-      api_key_cmd = "pass show /api/tokens/openai/neovim",
+      async_api_key_cmd = "pass show /api/tokens/openai/neovim",
     })
   end,
 }
