@@ -16,6 +16,7 @@ return {
         markdown = { "prettier" },
         graphql = { "prettier" },
         json = { "prettier" },
+        liquid = { "prettier" },
         bash = { "shellcheck" },
         sh = { "shellcheck" },
         yaml = { "prettier" },
