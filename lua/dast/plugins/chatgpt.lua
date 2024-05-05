@@ -1,5 +1,5 @@
 return {
-  "dreamsofcode-io/CHatGPT.nvim",
+  "dreamsofcode-io/ChatGPT.nvim",
   event = "VeryLazy",
   dependencies = {
     "MunifTanjim/nui.nvim",
