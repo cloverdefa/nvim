@@ -16,6 +16,7 @@ return {
         markdown = { "prettier" },
         graphql = { "prettier" },
         json = { "prettier" },
+        liquid = { "prettier" },
         bash = { "shellcheck" },
         sh = { "shellcheck" },
         yaml = { "prettier" },
@@ -33,7 +34,7 @@ return {
       conform.format({
         lsp_fallback = true,
         async = false,
-        timeout_ms = 2000,
+        timeout_ms = 1000,
       })
     end, { desc = "Format file or range (in visual mode)" })
   end,
