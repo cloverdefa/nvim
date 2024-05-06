@@ -27,14 +27,6 @@ return {
     mason_lspconfig.setup({
       -- list of servers for mason to install
       ensure_installed = {
-        "tsserver",
-        "html",
-        "cssls",
-        "tailwindcss",
-        "svelte",
-        "graphql",
-        "emmet_ls",
-        "prismals",
         "bashls",
         "lua_ls",
         "pyright",
@@ -49,7 +41,6 @@ return {
         "pylint", -- Pylint is a static code analyser for Python 2 or 3.
         "stylua", -- An opinionated Lua code formatter.
         "isort", -- isort is a Python utility / library to sort imports alphabetically.
-        "eslint_d", -- js linte
         "shfmt", -- A shell formatter (sh/bash/mksh).
       },
     })
