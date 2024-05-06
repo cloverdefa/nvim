@@ -26,6 +26,6 @@ return {
     end
 
     vim.keymap.set("n", "<leader>db", dap.toggle_breakpoint, {})
-    vim.keymap.set("n", "<leader>dpr", dap.continue, {})
+    vim.keymap.set("n", "<leader>dbr", dap.continue, {})
   end,
 }
