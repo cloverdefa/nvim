@@ -1,6 +1,6 @@
 return {
   "dreamsofcode-io/ChatGPT.nvim",
-  event = "VeryLazy",
+  event = { "BufReadPre", "BufNewFile" },
   dependencies = {
     "MunifTanjim/nui.nvim",
     "nvim-lua/plenary.nvim",
