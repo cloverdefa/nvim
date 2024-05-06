@@ -1,6 +1,6 @@
 return {
   "jose-elias-alvarve/null-ls.nvim",
-  ft = {"python", "sh"},
+  ft = {"python"},
   opts = function()
   end,
 }
