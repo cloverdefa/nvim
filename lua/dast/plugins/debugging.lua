@@ -1,9 +1,10 @@
 return {
-  "mfussenegger/nvim-dap",
-  dependencies = {
-    "rcarriga/nvim-dap-ui",
-    "mfussenegger/nvim-dap-python",
-  },
+  { "mfussenegger/nvim-dap-python", dependencies = {
+    "mfussenegger/nvim-dap",
+  } },
+  { "rcarriga/nvim-dap-ui", dependencies = {
+    "mfussenegger/nvim-dap",
+  } },
   config = function()
     local dap = require("dap")
     local dapui = require("dapui")
@@ -21,6 +22,6 @@ return {
     end
 
     vim.keymap.set("n", "<Leader>db", dap.toggle_breakpoint, {})
-    vim.keymap.set("n", "<leader>dt", dap.continue, {})
+    vim.keymap.set("n", "<leader>dpr", dap.continue, {})
   end,
 }
