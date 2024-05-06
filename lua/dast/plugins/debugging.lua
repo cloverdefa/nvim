@@ -6,8 +6,7 @@ return {
       "mfussenegger/nvim-dap",
     },
   },
-  { "rcarriga/nvim-dap-ui", event = "VeryLazy", 
-dependencies = {
+  { "rcarriga/nvim-dap-ui", event = "VeryLazy", dependencies = {
     "mfussenegger/nvim-dap",
   } },
   config = function()
@@ -26,7 +25,7 @@ dependencies = {
       dapui.close()
     end
 
-    vim.keymap.set("n", "<Leader>db", dap.toggle_breakpoint, {})
+    vim.keymap.set("n", "<leader>db", dap.toggle_breakpoint, {})
     vim.keymap.set("n", "<leader>dpr", dap.continue, {})
   end,
 }
