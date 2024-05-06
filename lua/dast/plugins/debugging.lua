@@ -1,8 +1,13 @@
 return {
-  { "mfussenegger/nvim-dap-python", dependencies = {
-    "mfussenegger/nvim-dap",
-  } },
-  { "rcarriga/nvim-dap-ui", dependencies = {
+  {
+    "mfussenegger/nvim-dap-python",
+    event = "VeryLazy",
+    dependencies = {
+      "mfussenegger/nvim-dap",
+    },
+  },
+  { "rcarriga/nvim-dap-ui", event = "VeryLazy", 
+dependencies = {
     "mfussenegger/nvim-dap",
   } },
   config = function()
