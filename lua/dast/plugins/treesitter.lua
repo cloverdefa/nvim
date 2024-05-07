@@ -28,13 +28,21 @@ return {
       },
       -- ensure these language parsers are installed
       ensure_installed = {
-        "python",
-        "bash",
         "lua",
+        "bash",
         "ssh_config",
         "git_config",
         "gitcommit",
         "gitignore",
+        "python",
+        "vim",
+        "vimdoc",
+        "json",
+        "yaml",
+        "markdown",
+        "markdown_inline",
+        "dockerfile",
+        "c",
       },
       incremental_selection = {
         enable = true,
