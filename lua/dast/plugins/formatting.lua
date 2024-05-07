@@ -9,7 +9,7 @@ return {
         markdown = { "prettier" },
         json = { "prettier" },
         bash = { "shellcheck" },
-        sh = { "shellcheck" },
+        sh = { "shfmt" },
         yaml = { "prettier" },
         lua = { "stylua" },
         python = { "isort", "black" },
