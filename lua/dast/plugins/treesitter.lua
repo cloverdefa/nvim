@@ -1,3 +1,4 @@
+---@diagnostic disable: missing-fields, assign-type-mismatch
 return {
   "nvim-treesitter/nvim-treesitter",
   event = { "BufReadPre", "BufNewFile" },
