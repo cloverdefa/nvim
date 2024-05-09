@@ -129,7 +129,7 @@ return {
         -- configure powershell language server
         lspconfig["powershell_es"].setup({
           capabilities = capabilities,
-          filetypes = { "powershell" },
+          filetypes = { "ps1" },
         })
       end,
     })
