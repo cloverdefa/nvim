@@ -13,7 +13,7 @@ return {
         yaml = { "prettier" },
         lua = { "stylua" },
         python = { "isort", "black" },
-        zsh = { "bueatysh" },
+        zsh = { "beautysh" },
       },
       format_on_save = {
         lsp_fallback = true,
