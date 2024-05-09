@@ -126,7 +126,7 @@ return {
         })
       end,
       ["powershell_es"] = function()
-        -- configure python language server
+        -- configure powershell language server
         lspconfig["powershell_es"].setup({
           capabilities = capabilities,
           filetypes = { "powershell" },
