@@ -43,6 +43,7 @@ return {
         "markdown_inline",
         "dockerfile",
         "c",
+        "regex",
       },
       incremental_selection = {
         enable = true,
