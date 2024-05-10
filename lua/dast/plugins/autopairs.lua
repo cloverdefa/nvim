@@ -16,6 +16,8 @@ return {
         javascript = { "template_string" }, -- don't add pairs in javscript template_string treesitter nodes
         java = false, -- don't check treesitter on java
         sh = false, -- enable autopairs in all shell script treesitter nodes
+        zsh = false,
+        ps1 = false,
       },
     })
 
