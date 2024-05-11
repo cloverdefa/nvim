@@ -1,5 +1,6 @@
 return {
   "jackMort/ChatGPT.nvim",
+  enabled = false,
   event = "VeryLazy",
   dependencies = {
     "MunifTanjim/nui.nvim",
@@ -9,7 +10,7 @@ return {
   },
   config = function()
     require("chatgpt").setup({
-      api_key_cmd = "gpg --decrypt ~/openai_api_key.gpg",
+      api_key_cmd = "gpg --decrypt ~/secret.txt.gpg",
     })
 
     vim.keymap.set("n", "<leader>cc", "<cmd>ChatGPT<CR>", { desc = "ChatGPT" })
