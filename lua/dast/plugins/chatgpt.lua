@@ -10,7 +10,7 @@ return {
   },
   config = function()
     require("chatgpt").setup({
-      async_api_key_cmd = "gpg --decrypt $HOME/secret.gpg",
+      async_api_key_cmd = "gpg --decrypt $HOME/openai.gpg",
     })
     local keymap = vim.keymap
     keymap.set("n", "<leader>cc", "<cmd>ChatGPT<CR>", { desc = "ChatGPT" })
