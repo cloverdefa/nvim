@@ -8,7 +8,7 @@ return {
       formatters_by_ft = {
         markdown = { "prettier" },
         json = { "prettier" },
-        bash = { "shellcheck" },
+        bash = { "shfmt" },
         sh = { "shfmt" },
         yaml = { "prettier" },
         lua = { "stylua" },

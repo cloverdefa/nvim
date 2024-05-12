@@ -1,3 +1,4 @@
+---@diagnostic disable: undefined-global
 return {
   "neovim/nvim-lspconfig",
   event = { "BufReadPre", "BufNewFile" },
@@ -88,6 +89,7 @@ return {
         -- configure lua server (with special settings)
         lspconfig["lua_ls"].setup({
           capabilities = capabilities,
+          on_attach = on_attach,
           settings = {
             lua = {
               -- make the language server recognize "vim" global
@@ -114,14 +116,6 @@ return {
         lspconfig["pyright"].setup({
           capabilities = capabilities,
           filetypes = { "python" },
-          on_attach = on_attach,
-        })
-      end,
-      ["powershell_es"] = function()
-        -- configure powershell language server
-        lspconfig["powershell_es"].setup({
-          capabilities = capabilities,
-          filetypes = { "ps1" },
           on_attach = on_attach,
         })
       end,

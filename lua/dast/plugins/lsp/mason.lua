@@ -30,7 +30,6 @@ return {
         "bashls",
         "lua_ls",
         "pyright",
-        "powershell_es",
       },
     })
 
