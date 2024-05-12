@@ -84,23 +84,6 @@ return {
           capabilities = capabilities,
         })
       end,
-      ["bashls"] = function()
-        -- configure lua server (with special settings)
-        lspconfig["bashls"].setup({
-          capabilities = capabilities,
-          settings = {
-            lua = {
-              -- make the language server recognize "vim" global
-              diagnostics = {
-                globals = { "vim" },
-              },
-              completion = {
-                callsnippet = "replace",
-              },
-            },
-          },
-        })
-      end,
       ["lua_ls"] = function()
         -- configure lua server (with special settings)
         lspconfig["lua_ls"].setup({
@@ -118,11 +101,20 @@ return {
           },
         })
       end,
+      ["bashls"] = function()
+        -- configure bash language server
+        lspconfig["bashls"].setup({
+          capabilities = capabilities,
+          filetypes = { "sh" },
+          on_attach = on_attach,
+        })
+      end,
       ["pyright"] = function()
         -- configure python language server
         lspconfig["pyright"].setup({
           capabilities = capabilities,
           filetypes = { "python" },
+          on_attach = on_attach,
         })
       end,
       ["powershell_es"] = function()
@@ -130,6 +122,7 @@ return {
         lspconfig["powershell_es"].setup({
           capabilities = capabilities,
           filetypes = { "ps1" },
+          on_attach = on_attach,
         })
       end,
     })
