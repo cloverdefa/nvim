@@ -1,5 +1,5 @@
 return {
-  "jackMort/ChatGPT.nvim",
+  "dreamsofcode-io/ChatGPT.nvim",
   enabled = false,
   event = "VeryLazy",
   dependencies = {
@@ -10,7 +10,7 @@ return {
   },
   config = function()
     require("chatgpt").setup({
-      api_key_cmd = "gpg --decrypt ~/secret.gpg",
+      async_api_key_cmd = "gpg --decrypt $HOME/secret.gpg",
     })
     local keymap = vim.keymap
     keymap.set("n", "<leader>cc", "<cmd>ChatGPT<CR>", { desc = "ChatGPT" })
