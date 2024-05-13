@@ -15,6 +15,6 @@ return {
     })
     vim.keymap.set("n", "<Leader>cc", "<cmd>ChatGPT<CR>", { desc = "Open ChatGPT" })
     vim.keymap.set("n", "<Leader>cC", "<cmd>CHatGPTCompleteCode<CR>", { desc = "ChatGPT AutoComplete Code" })
-    vim.keymap.set("n", "<Leader>cdt", "<cmd>ChatGPTRun add_tests<CR>", { desc = "ChatGPT Add Test Code" })
+    vim.keymap.set("n", "<Leader>ct", "<cmd>ChatGPTRun add_tests<CR>", { desc = "ChatGPT Add Test Code" })
   end,
 }
