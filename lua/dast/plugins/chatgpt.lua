@@ -14,7 +14,7 @@ return {
     require("chatgpt").setup({
       api_key_cmd = "gpg --decrypt " .. home .. "/openai.gpg",
     })
-    keymap.set("n", "<Leader>cC", "<cmd>CHatGPTCompleteCode<CR>", { desc = "ChatGPT AutoComplete Code" })
+    keymap.set("n", "<Leader>cm", "<cmd>CHatGPTCompleteCode<CR>", { desc = "ChatGPT AutoComplete Code" })
     keymap.set("n", "<Leader>ct", "<cmd>ChatGPTRun add_tests<CR>", { desc = "ChatGPT Add Test Code" })
   end,
   key = {
