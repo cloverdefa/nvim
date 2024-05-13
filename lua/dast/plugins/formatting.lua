@@ -6,13 +6,13 @@ return {
 
     conform.setup({
       formatters_by_ft = {
-        markdown = { "prettier" },
-        json = { "prettier" },
-        bash = { "shfmt" },
-        sh = { "shfmt" },
-        yaml = { "prettier" },
         lua = { "stylua" },
         python = { "isort", "black" },
+        sh = { "shfmt" },
+        bash = { "shfmt" },
+        markdown = { "prettier" },
+        json = { "prettier" },
+        yaml = { "prettier" },
       },
       format_on_save = {
         lsp_fallback = true,
