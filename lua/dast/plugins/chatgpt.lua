@@ -10,7 +10,9 @@ return {
   },
   config = function()
     local home = vim.fn.expand("$HOME")
+
     local keymap = vim.keymap
+
     require("chatgpt").setup({
       api_key_cmd = "gpg --decrypt " .. home .. "/openai.gpg",
     })
