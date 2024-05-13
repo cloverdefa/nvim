@@ -26,6 +26,6 @@ return {
   },
   -- Dismiss Noice Message
   vim.keymap.set("n", "<leader>nd", "<cmd>NoiceDismiss<CR>", { desc = "Noice Dismiss Noice Message" }),
-  vim.keymap.set("n", "<leader>nr", "<cmd>NoiceError<CR>", { desc = "Noice Show Errors Message" }),
+  vim.keymap.set("n", "<leader>nr", "<cmd>NoiceErrors<CR>", { desc = "Noice Show Errors Message" }),
   vim.keymap.set("n", "<leader>nt", "<cmd>NoiceLast<CR>", { desc = "Noice Last Message" }),
 }
