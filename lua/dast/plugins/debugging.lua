@@ -25,6 +25,6 @@ return {
     end
 
     keymap.set("n", "<Leader>dt", dap.toggle_breakpoint, {})
-    keymap.set("n", "<Leader>dc", dap.contnue, {})
+    keymap.set("n", "<Leader>dc", dap.continue, {})
   end,
 }
