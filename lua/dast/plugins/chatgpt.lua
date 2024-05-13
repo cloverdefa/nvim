@@ -1,7 +1,7 @@
 return {
   "jackMort/ChatGPT.nvim",
   -- enabled = false,
-  event = false,
+  event = { "InsertEnter" },
   dependencies = {
     "MunifTanjim/nui.nvim",
     "nvim-lua/plenary.nvim",
