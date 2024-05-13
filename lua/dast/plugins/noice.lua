@@ -25,5 +25,7 @@ return {
     "rcarriga/nvim-notify",
   },
   -- Dismiss Noice Message
-  vim.keymap.set("n", "<leader>nd", "<cmd>NoiceDismiss<CR>", { desc = "Dismiss Noice Message" }),
+  vim.keymap.set("n", "<leader>nd", "<cmd>NoiceDismiss<CR>", { desc = "Noice Dismiss Noice Message" }),
+  vim.keymap.set("n", "<leader>nr", "<cmd>NoiceError<CR>", { desc = "Noice Show Errors Message" }),
+  vim.keymap.set("n", "<leader>nt", "<cmd>NoiceLast<CR>", { desc = "Noice Last Message" }),
 }
