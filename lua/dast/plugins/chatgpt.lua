@@ -1,7 +1,7 @@
 return {
   "jackMort/ChatGPT.nvim",
   -- enabled = false,
-  evnet = { "BufReadPre", "BufNewFile" },
+  evnet = "VeryLazy",
   dependencies = {
     "MunifTanjim/nui.nvim",
     "nvim-lua/plenary.nvim",
