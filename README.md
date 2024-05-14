@@ -37,7 +37,7 @@ npm install -g neovim tree-sitter-cli
 
 ```Shell
 git clone https://github.com/cloverdefa/nvim.git ~/.config/nvim
-git clone https://github.com/junegunn/fzf-git.sh.git ~/ffzf_git
+git clone https://github.com/junegunn/fzf-git.sh.git ~/fzf-git.sh
 ```
 
 ## 設定.zshrc(已設定可跳過)
