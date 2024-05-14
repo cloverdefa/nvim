@@ -42,6 +42,9 @@ return {
         "stylua", -- An opinionated Lua code formatter.
         "isort", -- isort is a Python utility / library to sort imports alphabetically.
         "shfmt", -- A shell formatter (sh/bash/mksh).
+        "debugpy",
+        "flake8",
+        "mypy",
       },
     })
   end,
