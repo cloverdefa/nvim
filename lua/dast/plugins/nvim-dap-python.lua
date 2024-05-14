@@ -7,11 +7,14 @@ return {
   },
   config = function()
     require("dap-python").setup("~/.pyenv/shims/python3")
-    vim.keymap.set("n", "<Leader>b", function()
-      require("dap").toggle_breakpoint()
-      vim.keymap.set("n", "<F5>", function()
-        require("dap").continue()
-      end)
+    local keymap = vim.keymap
+
+    local dap = require("dap")
+    keymap.set("n", "<Leader>b", function()
+      dap.toggle_breakpoint()
+    end)
+    keymap.set("n", "<F5>", function()
+      dap.continue()
     end)
   end,
 }
