@@ -22,7 +22,7 @@ brew install iterm2 neovim zoxide eza fzf bat fd ripgrep git-delta pyenv poetry 
 ## 安裝相關套件(已安裝可跳過)
 
 ```Shell
-pip install neovim pynvim
+pip install neovim pynvim debugpy isort
 ```
 
 ## NVM設定NODE(已安裝可跳過)
