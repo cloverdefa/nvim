@@ -19,18 +19,6 @@ brew install --cask font-hack-nerd-font
 brew install iterm2 neovim zoxide eza fzf bat fd ripgrep git-delta pyenv poetry nvm tmux
 ```
 
-## 下載設定
-
-```Shell
-git clone https://github.com/cloverdefa/nvim.git ~/.config/nvim
-```
-
-## 設定.zshrc
-
-```Shell
-echo $(cat ~/.config/nvim/.zshrc) >> ~/.zshrc
-```
-
 ## 安裝相關套件
 
 ```Shell
@@ -43,4 +31,16 @@ pip install neovim pynvim
 nvm install node
 npm install -g neovim tree-sitter-cli
 
+```
+
+## 下載設定
+
+```Shell
+git clone https://github.com/cloverdefa/nvim.git ~/.config/nvim
+```
+
+## 設定.zshrc
+
+```Shell
+echo $(cat ~/.config/nvim/.zshrc) >> ~/.zshrc
 ```
