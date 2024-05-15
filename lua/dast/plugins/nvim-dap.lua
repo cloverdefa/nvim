@@ -2,7 +2,11 @@ return {
   -- DAP for Bash
   {
     "mfussenegger/nvim-dap",
+    event = "InsertEnter",
     ft = "sh",
+    dependencies = {
+      "rcarriga/nvim-dap-ui",
+    },
     config = function()
       local dap = require("dap")
 
@@ -46,9 +50,11 @@ return {
   -- DAP for Python
   {
     "mfussenegger/nvim-dap-python",
+    event = "InsertEnter",
     ft = "python",
     dependencies = {
       "mfussenegger/nvim-dap",
+      "rcarriga/nvim-dap-ui",
     },
     config = function()
       require("dap-python").setup("~/.pyenv/shims/python3")
@@ -66,6 +72,7 @@ return {
   -- DAP UI
   {
     "rcarriga/nvim-dap-ui",
+    event = "InsertEnter",
     dependencies = {
       "mfussenegger/nvim-dap",
       "nvim-neotest/nvim-nio",
@@ -86,5 +93,6 @@ return {
         -- require('dapui').close() -- Uncomment to close DAP UI when exited
       end
     end,
+    module = "dapui", -- This ensures that dapui is only loaded when required
   },
 }
