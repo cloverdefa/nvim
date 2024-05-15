@@ -45,6 +45,7 @@ return {
         "debugpy",
         "flake8",
         "mypy",
+        "bash-debug-adapter",
       },
     })
   end,
