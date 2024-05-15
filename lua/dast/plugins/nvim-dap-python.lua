@@ -1,6 +1,6 @@
 return {
   "mfussenegger/nvim-dap-python",
-  event = "VeryLazy",
+  event = { "InsertEnter" },
   ft = "python",
   dependencies = {
     "mfussenegger/nvim-dap",
