@@ -6,6 +6,7 @@ return {
 
     local config = {
       api_key_cmd = "gpg --decrypt " .. home .. "/openai.gpg",
+
       chat = {
         welcome_message = "歡迎使用ChatGPT",
         loading_text = "讀取中，請稍後 ...",
