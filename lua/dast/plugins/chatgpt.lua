@@ -16,7 +16,7 @@ return {
   end,
   keys = {
     { "<Leader>cc", "<cmd>ChatGPT<CR>", desc = "Open ChatGPT" },
-    { "<Leader>cm", "<cmd>CHatGPTCompleteCode<CR>", desc = "ChatGPT AutoComplete Code" },
+    { "<Leader>cm", "<cmd>ChatGPTCompleteCode<CR>", desc = "ChatGPT AutoComplete Code" },
     { "<Leader>ca", "<cmd>ChatGPTRun add_tests<CR>", desc = "ChatGPT Add Test Code" },
   },
 }
