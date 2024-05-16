@@ -6,6 +6,29 @@ return {
 
     local config = {
       api_key_cmd = "gpg --decrypt " .. home .. "/openai.gpg",
+      chat = {
+        welcome_message = "歡迎使用ChatGPT",
+        loading_text = "讀取中，請稍後 ...",
+        question_sign = "", -- 🙂
+        answer_sign = "ﮧ", -- 🤖
+        border_left_sign = "",
+        border_right_sign = "",
+        max_line_length = 120,
+        sessions_window = {
+          active_sign = "  ",
+          inactive_sign = "  ",
+          current_line_sign = "",
+          border = {
+            style = "rounded",
+            text = {
+              top = " Sessions ",
+            },
+          },
+          win_options = {
+            winhighlight = "Normal:Normal,FloatBorder:FloatBorder",
+          },
+        },
+      },
     }
 
     require("chatgpt").setup(config)
