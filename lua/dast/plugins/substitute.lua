@@ -1,6 +1,6 @@
 return {
   "gbprod/substitute.nvim",
-  enabled = false,
+  -- enabled = false,
   event = { "BufReadPre", "BufNewFile" },
   config = function()
     local substitute = require("substitute")
