@@ -25,6 +25,8 @@ return {
   -- DAP UI
   {
     "rcarriga/nvim-dap-ui",
+    event = "InsertEnter",
+    ft = { "python" },
     dependencies = {
       "nvim-neotest/nvim-nio",
     },
