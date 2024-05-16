@@ -4,8 +4,9 @@ return {
   config = function()
     local home = vim.fn.expand("$HOME")
 
-    local config = {
+    local setting = {
       api_key_cmd = "gpg --decrypt " .. home .. "/openai.gpg",
+
       chat = {
         welcome_message = "歡迎使用ChatGPT",
         loading_text = "讀取中，請稍後 ...",
@@ -31,7 +32,7 @@ return {
       },
     }
 
-    require("chatgpt").setup(config)
+    require("chatgpt").setup(setting)
   end,
   keys = {
     { "<Leader>cc", "<cmd>ChatGPT<CR>", desc = "Open ChatGPT" },
