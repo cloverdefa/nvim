@@ -46,6 +46,7 @@ return {
       end)
     end,
   },
+
   -- DAP UI
   {
     "rcarriga/nvim-dap-ui",
