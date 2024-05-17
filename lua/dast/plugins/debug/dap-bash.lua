@@ -2,6 +2,7 @@ return {
   -- DAP for Bash
   {
     "mfussenegger/nvim-dap",
+    -- enabled = false,
     event = "InsertEnter",
     ft = "sh",
     dependencies = {
@@ -50,6 +51,7 @@ return {
   -- DAP UI
   {
     "rcarriga/nvim-dap-ui",
+    -- enabled = false,
     event = "InsertEnter",
     ft = { "bash", "sh" },
     dependencies = {

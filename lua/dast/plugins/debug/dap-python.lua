@@ -2,6 +2,7 @@ return {
   -- DAP for Python
   {
     "mfussenegger/nvim-dap-python",
+    -- enabled = false,
     event = "InsertEnter",
     ft = "python",
     dependencies = {
@@ -25,6 +26,7 @@ return {
   -- DAP UI
   {
     "rcarriga/nvim-dap-ui",
+    -- enabled = false,
     event = "InsertEnter",
     ft = { "python" },
     dependencies = {
