@@ -1,6 +1,7 @@
 ---@diagnostic disable: missing-fields
 return {
   "numToStr/Comment.nvim",
+  -- enabled = false,
   event = { "BufReadPre", "BufNewFile" },
   dependencies = {
     "JoosepAlviste/nvim-ts-context-commentstring",
