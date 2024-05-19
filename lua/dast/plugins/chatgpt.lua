@@ -1,6 +1,6 @@
 return {
   "jackMort/ChatGPT.nvim",
-  -- cond = false,
+  cond = false,
   config = function()
     local home = vim.fn.expand("$HOME")
 

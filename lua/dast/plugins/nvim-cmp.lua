@@ -1,7 +1,7 @@
 ---@diagnostic disable: missing-fields
 return {
   "hrsh7th/nvim-cmp",
-  -- enabled = false,
+  -- cond = false,
   event = "InsertEnter",
   dependencies = {
     "hrsh7th/cmp-buffer", -- source for text in buffer

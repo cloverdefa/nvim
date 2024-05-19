@@ -1,5 +1,5 @@
 return {
   "stevearc/dressing.nvim",
-  -- enabled = false,
+  -- cond = false,
   event = "VeryLazy",
 }

@@ -1,6 +1,6 @@
 return {
   "szw/vim-maximizer",
-  -- enabled = false,
+  -- cond = false,
   event = { "BufReadPre", "BufNewFile" },
   keys = {
     { "<leader>sm", "<cmd>MaximizerToggle<CR>", desc = "Maximize/minimize a split" },

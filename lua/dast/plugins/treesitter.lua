@@ -1,7 +1,7 @@
 ---@diagnostic disable: missing-fields, assign-type-mismatch
 return {
   "nvim-treesitter/nvim-treesitter",
-  -- enabled = false,
+  -- cond = false,
   event = { "BufReadPre", "BufNewFile" },
   build = ":TSUpdate",
   dependencies = {
