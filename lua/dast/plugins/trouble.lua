@@ -1,6 +1,6 @@
 return {
   "folke/trouble.nvim",
-  -- enabled = false,
+  -- cond = false,
   dependencies = { "nvim-tree/nvim-web-devicons", "folke/todo-comments.nvim" },
   keys = {
     { "<leader>xx", "<cmd>TroubleToggle<CR>", desc = "Open/close trouble list" },
