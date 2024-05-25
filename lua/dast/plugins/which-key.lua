@@ -2,6 +2,7 @@ return {
   "folke/which-key.nvim",
   -- cond = false,
   event = "VeryLazy",
+  --BUG: conflicting keymaps "gc"
   init = function()
     vim.o.timeout = true
     vim.o.timeoutlen = 500
