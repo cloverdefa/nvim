@@ -1,8 +1,8 @@
 return {
   "folke/which-key.nvim",
-  -- cond = false,
+  cond = false,
   event = "VeryLazy",
-  --TODO: check conflicting keymaps "gc"
+  --BUG: conflicting keymaps "gc"
   init = function()
     vim.o.timeout = true
     vim.o.timeoutlen = 500
