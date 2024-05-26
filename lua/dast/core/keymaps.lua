@@ -30,11 +30,3 @@ keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close current tab" 
 keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" }) --  移動到下一個分頁
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) --  移動到前一個分頁
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" }) --  移動目前緩衝區至新分頁
-
-keymap.set("n", "<F10>", function()
-  vim.cmd("below split")
-  vim.cmd("terminal")
-  vim.fn.feedkeys("a")
-  local enter = vim.api.nvim_replace_termcodes("<CR>", true, true, true)
-  vim.fn.feedkeys("clear" .. enter)
-end) -- 分割畫面啟動終端機
