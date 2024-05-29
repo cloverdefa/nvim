@@ -1,6 +1,6 @@
 return {
   "folke/which-key.nvim",
-  cond = false,
+  -- cond = false,
   event = "VeryLazy",
   --BUG: conflicting keymaps "gc"
   init = function()
