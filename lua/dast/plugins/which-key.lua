@@ -2,10 +2,10 @@ return {
   "folke/which-key.nvim",
   -- cond = false,
   event = "VeryLazy",
-  --BUG: conflicting keymaps "gc"
   init = function()
     vim.o.timeout = true
     vim.o.timeoutlen = 300
+    --BUG: conflicting keymaps "gc"
     -- unmap gc keymap
     vim.api.nvim_set_keymap("n", "gc", "", { noremap = true, silent = true })
   end,

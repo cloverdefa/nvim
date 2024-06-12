@@ -1,4 +1,4 @@
-return {
+eturn({
   "mfussenegger/nvim-lint",
   -- cond = false,
   event = { "BufReadPre", "BufNewFile" },
@@ -24,4 +24,4 @@ return {
       lint.try_lint()
     end, { desc = "Trigger linting for current file" })
   end,
-}
+})
