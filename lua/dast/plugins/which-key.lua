@@ -5,7 +5,7 @@ return {
     event = "VeryLazy",
     init = function()
       vim.o.timeout = true
-      vim.o.timeoutlen = 300
+      vim.o.timeoutlen = 500
       --BUG: conflicting keymaps "gc"
       -- unmap gc keymap
       vim.api.nvim_set_keymap("n", "gc", "", { noremap = true, silent = true })
