@@ -18,4 +18,5 @@ return {
       pre_hook = ts_context_commentstring.create_pre_hook(),
     })
   end,
+  vim.api.nvim_set_keymap("n", "gc", "", { noremap = true, silent = true }),
 }
