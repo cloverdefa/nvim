@@ -1,4 +1,5 @@
 vim.cmd("let g:netrw_liststyle = 3") -- 設定 netrw 的列表樣式為樹狀圖
+vim.o.sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
 
 local opt = vim.opt -- 為了簡潔，使用 opt 來代替 vim.opt
 
