@@ -12,6 +12,7 @@ return {
   opts = {
     auto_restore = false,
     bypass_save_filetypes = { "alpha", "dashboard" },
-    suppress_dirs = { "~/", "~/Downloads", "~/Documents", "~/Desktop/" },
+    allowed_dirs = { "~/Documents/github" },
+    suppress_dirs = { "~/", "~/Downloads", "~/Desktop/" },
   },
 }
