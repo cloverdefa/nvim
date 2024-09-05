@@ -12,6 +12,6 @@ return {
   opts = {
     auto_restore = false,
     bypass_save_filetypes = { "alpha", "dashboard" },
-    suppress_dirs = { "~/", "~/Downloads", "~/Desktop/" },
+    suppress_dirs = { "~/", "~/Downloads/", "~/Desktop/" },
   },
 }
