@@ -10,7 +10,7 @@ return {
       "rcarriga/nvim-dap-ui",
     },
     config = function()
-      require("dap-python").setup("~/.pyenv/shims/python3")
+      require("dap-python").setup("python3")
 
       local dap = require("dap")
 
