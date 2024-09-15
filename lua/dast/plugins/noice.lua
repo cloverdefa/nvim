@@ -10,6 +10,13 @@ return {
           filter = { event = "msg_showmode" },
         },
       },
+      lsp = {
+        override = {
+          -- 覆寫 LSP 的 markdown 處理方式，使其與 Noice 一起工作
+          ["vim.lsp.util.convert_input_to_markdown_lines"] = true,
+          ["vim.lsp.util.stylize_markdown"] = true,
+        },
+      },
     })
   end,
   dependencies = {
