@@ -3,6 +3,13 @@ return {
   lazy = true,
   config = function()
     require("nvim-treesitter.configs").setup({
+      TSConfig = {},
+      modules = {},
+      ensure_installed = { "c", "lua", "javascript", "typescript" }, -- 根據需要自定義語言
+      sync_install = false, -- 是否同步安裝
+      ignore_install = {}, -- 可以設定要忽略安裝的解析器
+      auto_install = true, -- 自動安裝缺少的解析器
+
       textobjects = {
         select = {
           enable = true,

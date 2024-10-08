@@ -1,5 +1,9 @@
 return {
   "goolord/alpha-nvim",
+  dependencies = {
+    "echasnovski/mini.icons",
+    "nvim-lua/plenary.nvim",
+  },
   -- cond = false,
   event = "VimEnter",
   config = function()
