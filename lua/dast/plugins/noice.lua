@@ -18,6 +18,9 @@ return {
         },
       },
     })
+    vim.keymap.set("n", "<leader>nc", function()
+      require("noice").cmd("dismiss")
+    end, { desc = "Dismiss Noice notifications" })
   end,
   dependencies = {
     "MunifTanjim/nui.nvim",
