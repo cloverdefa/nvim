@@ -21,6 +21,9 @@ return {
     vim.keymap.set("n", "<leader>nc", function()
       require("noice").cmd("dismiss")
     end, { desc = "Dismiss Noice notifications" })
+    vim.keymap.set("n", "<leader>nl", function()
+      require("noice").cmd("history")
+    end, { desc = "shows the message history" })
   end,
   dependencies = {
     "MunifTanjim/nui.nvim",
